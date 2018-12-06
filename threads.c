@@ -28,6 +28,6 @@ int main(int argc, char *argv[])
     pthread_create(&p2, NULL, worker, NULL);
     pthread_join(p1, NULL);
     pthread_join(p2, NULL);
-    printf("Final value     : %d\b", counter);
+    printf("Final value     : %d\n", counter);
     return 0;
 }
